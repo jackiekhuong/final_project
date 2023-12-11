@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Edamam Food Database{% endblock %}
+
+{% block content %}
+  <form action="/get_food_data" method="get">
+    <label for="foodItem">Enter a food item:</label>
+    <input type="text" name="food_item" id="foodItem" required><br><br>
+
+    <input type="submit" value="Search">
+  </form>
+{% endblock %}
